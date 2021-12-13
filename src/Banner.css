@@ -1,0 +1,124 @@
+.banner {
+  position: relative;
+  height: 448px;
+  color: #fff;
+  /* EXPANDE O REDUCE LA IMAGEN AL MOMENTO DE MOVER EL ASPECT RATIO DE LA PAGINA */
+  object-fit: contain;
+}
+
+.banner__content {
+  margin-left: 0;
+  padding-top: 140px;
+  height: 190px;
+}
+.banner__title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+  padding-left: 20px;
+}
+.banner__description {
+  text-align: justify;
+  padding-left: 20px;
+  width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
+}
+
+.banner--bannerBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61) #111
+  );
+}
+.banner__buttons {
+  padding-left: 20px;
+}
+
+.banner__button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .banner__buttons {
+    text-align: center;
+    justify-content: center;
+    padding-right: 220px;
+  }
+  .banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .banner__buttons {
+    text-align: center;
+    justify-content: center;
+    padding-right: 350px;
+  }
+  .banner__title {
+    padding-right: 300px;
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .banner__buttons {
+    padding-right: 490px;
+  }
+  .banner__title {
+    padding-right: 450px;
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .banner__buttons {
+    text-align: center;
+    justify-content: center;
+    padding-right: 817px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1149px) {
+  .banner__buttons {
+    padding-right: 1165px;
+  }
+  .banner__title {
+    padding-bottom: 0.3rem;
+  }
+}

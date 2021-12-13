@@ -1,0 +1,110 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://www.thedigitalfix.com/wp-content/uploads/2021/07/Netflix_titles-900x506.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+.loginScreen__logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+.loginScreen__body > h1 {
+  font-size: 2.725rem;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.loginScreen__body {
+  color: white;
+  position: absolute;
+  top: 15%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+  /* ESTAS DOS SENTENCIAS HACEN AL FORMULARIO RESPONSIVO */
+  /* Y CENTRADO EN AMBOS LADOS */
+  /* SI SOLO DEJO LEFT O RIGHT, SE MANDA TODO A LA SENTENCIA QUE DEJAS */
+  /* P.E: SOLO LEFT:0 ---> MANDA TODO A LA IZQUIERDA */
+  /* P.E: SOLO RIGHT:0 ---> MANDA TODO A LA DERECHA*/
+  /* P.E: RIGHT:0 Y LEFT:0 MANDA TODO AL CENTRO */
+  left: 0;
+  right: 0;
+}
+
+.loginScreen__body > button {
+  position: fixed;
+  right: 0;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-top: 3em;
+  margin-right: auto;
+  object-fit: contain;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: (0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 08) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 0;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-right: 2em;
+  object-fit: contain;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+.loginScreen__input {
+  margin: 20px;
+}
+
+.loginScreen__getStarted {
+  padding: 18px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
